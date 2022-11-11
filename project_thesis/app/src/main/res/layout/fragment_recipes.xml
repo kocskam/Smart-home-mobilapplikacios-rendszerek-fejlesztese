@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recipes.RecipesFragment"
+    android:orientation="vertical"
+    android:id="@+id/fragment_layout"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:hint="Keresés..."
+        android:singleLine="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipe_list"
+        android:layout_below="@+id/search"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/famRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_colorNormal="@color/md_theme_light_surfaceTint"
+        fab:menu_colorPressed="@color/black"
+        fab:menu_colorRipple="@color/md_theme_light_onPrimaryContainer"
+        fab:menu_fab_label="Opciók"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="@color/grey"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_textColor="@color/pruple_white"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabAddRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add_receip"
+            fab:fab_label="Új recept"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/md_theme_light_surfaceTint"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <color name="seed">#6750A4</color>
+    <color name="md_theme_light_surfaceTint">#6750A4</color>
+    <color name="md_theme_light_surface">#FFFBFE</color>
+    <color name="md_theme_light_onPrimaryContainer">#21005D</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_dark_surfaceTint">#D0BCFF</color>
+    <color name="md_theme_dark_surfaceTintColor">#D0BCFF</color>
+    <color name="md_theme_dark_onErrorContainer">#F2B8B5</color>
+    <color name="md_theme_dark_onError">#601410</color>
+    <color name="md_theme_dark_error">#F2B8B5</color>
+    <color name="md_theme_dark_onBackground">#E6E1E5</color>
+    <color name="md_theme_dark_background">#1C1B1F</color>
+    <color name="md_theme_dark_onSurface">#E6E1E5</color>
+    <color name="md_theme_dark_surface">#1C1B1F</color>
+    <color name="md_theme_dark_onSecondary">#332D41</color>
+    <color name="md_theme_dark_secondary">#CCC2DC</color>
+    <color name="md_theme_dark_onPrimary">#381E72</color>
+    <color name="md_theme_dark_primary">#D0BCFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#1D262E</color>
+    <color name="font">#ffffff</color>
+    <color name="orange">#ffb52b</color>
+    <color name="grey">#66efecec</color>
+    <color name="pruple_white">#f2f1f1</color>
+</resources>

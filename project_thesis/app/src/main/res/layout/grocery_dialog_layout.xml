@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sl_name"
+        android:hint="Termék neve"
+        android:padding="16dp"
+        android:maxLength="40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sl_amount"
+            android:hint="Mennyiség"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:maxLength="5"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sl_unit"
+            android:hint="Egység"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:maxLength="20"/>
+
+    </LinearLayout>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sl_description"
+        android:hint="Leírás"
+        android:padding="16dp"
+        android:maxLength="100"/>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.home.HomeFragment"
+    android:id="@+id/fragmentHome">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Válassz fogást"
+        android:id="@+id/text_course" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_course"
+        android:layout_below="@+id/text_course">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leves"
+            android:id="@+id/c_soup"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desszert"
+            android:id="@+id/c_dessert"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Főétel"
+            android:id="@+id/c_main"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Válassz alkalmat"
+        android:id="@+id/text_category"
+        android:layout_below="@+id/linear_course"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_category"
+        android:layout_below="@id/text_category">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reggeli"
+            android:id="@+id/c_breakfast"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ebéd"
+            android:id="@+id/c_lunch"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacsora"
+            android:id="@+id/c_dinner"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Válassz hozzávalókat"
+        android:id="@+id/text_ingredients"
+        android:layout_below="@+id/linear_category" />
+
+    <TextView
+        android:id="@+id/text_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Hozzávalók"
+        android:padding="12dp"
+        app:drawableEndCompat="@drawable/ic_arrow"
+        app:drawableRightCompat="@drawable/ic_arrow"
+        android:layout_below="@id/text_ingredients"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ingredient"
+        android:text="Mutasd a recepteket"
+        android:id="@+id/button_show"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_selected"
+        android:paddingTop="40dp"
+        android:layout_below="@+id/text_ingredient"/>
+
+</RelativeLayout>
+
